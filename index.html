@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laddoo Ghar | Premium Laddoo Brand</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(120deg,#fff5e6,#ffe4c4);color:#333}
+
+header{position:fixed;width:100%;top:0;background:#ffffffdd;backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;padding:15px 40px;z-index:1000}
+
+.logo{font-size:22px;font-weight:700;color:#b63a00}
+
+nav a{margin-left:25px;text-decoration:none;font-weight:500;color:#333;transition:0.3s}
+nav a:hover{color:#e65100}
+
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+
+.hero h1{font-size:56px;color:#b63a00;animation:fadeUp 1s ease}
+.hero p{font-size:20px;margin:15px 0 30px}
+
+.btn{background:#e65100;color:white;padding:14px 28px;border:none;border-radius:30px;font-size:16px;cursor:pointer;transition:0.3s}
+.btn:hover{transform:scale(1.05);background:#bf360c}
+
+section{padding:100px 10%;}
+
+.section-title{text-align:center;font-size:36px;margin-bottom:50px;color:#b63a00}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}
+
+.card{background:white;padding:30px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:0.3s}
+
+.card:hover{transform:translateY(-10px)}
+
+.card h3{margin-bottom:10px;color:#e65100}
+
+.form-box{max-width:450px;margin:auto;background:white;padding:40px;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,0.08)}
+
+input,textarea,select{width:100%;padding:12px;margin-top:10px;border-radius:8px;border:1px solid #ccc}
+
+footer{background:#b63a00;color:white;text-align:center;padding:25px;margin-top:60px}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Laddoo Ghar</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#laddoos">Laddoos</a>
+<a href="#gifting">Gifting</a>
+<a href="#franchise">Franchise</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h1>India's Premium Laddoo Brand</h1>
+<p>Traditional sweets • Modern innovation • Luxury gifting</p>
+<button class="btn" onclick="scrollToSection('order')">Order Laddoos</button>
+</section>
+
+<section id="laddoos">
+<h2 class="section-title">Signature Laddoos</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Motichoor Royal</h3>
+<p>Classic premium laddoo made with pure desi ghee.</p>
+</div>
+
+<div class="card">
+<h3>Dry Fruit Maharaja</h3>
+<p>Rich laddoo loaded with almonds, pistachios and cashews.</p>
+</div>
+
+<div class="card">
+<h3>Laddoo Pop</h3>
+<p>Chocolate dipped laddoo on a stick with premium toppings.</p>
+</div>
+
+<div class="card">
+<h3>Paan Laddoo</h3>
+<p>Fresh paan flavour combined with traditional laddoo texture.</p>
+</div>
+
+</div>
+</section>
+
+<section id="gifting">
+<h2 class="section-title">Luxury Gifting</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Wedding Hampers</h3>
+<p>Premium laddoo gift boxes for weddings.</p>
+</div>
+
+<div class="card">
+<h3>Corporate Gifts</h3>
+<p>Elegant gift packs for companies and events.</p>
+</div>
+
+<div class="card">
+<h3>Festival Boxes</h3>
+<p>Special Diwali and celebration hampers.</p>
+</div>
+
+</div>
+</section>
+
+<section id="franchise">
+<h2 class="section-title">Franchise Opportunity</h2>
+
+<div class="form-box">
+<input placeholder="Name">
+<input placeholder="City">
+<input placeholder="Investment Capacity">
+<textarea placeholder="Message"></textarea>
+
+<br><br>
+<button class="btn">Apply for Franchise</button>
+</div>
+</section>
+
+<section id="order">
+<h2 class="section-title">Order Laddoos</h2>
+
+<div class="form-box">
+<input placeholder="Name">
+<input placeholder="Email">
+
+<select>
+<option>Motichoor Laddoo</option>
+<option>Dry Fruit Laddoo</option>
+<option>Laddoo Pop</option>
+<option>Paan Laddoo</option>
+</select>
+
+<input type="number" placeholder="Quantity">
+
+<br><br>
+<button class="btn">Place Order</button>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="form-box">
+<input placeholder="Name">
+<input placeholder="Email">
+<textarea placeholder="Message"></textarea>
+
+<br><br>
+<button class="btn">Send Message</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Laddoo Ghar • Premium Indian Laddoo Brand</p>
+</footer>
+
+<script>
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
